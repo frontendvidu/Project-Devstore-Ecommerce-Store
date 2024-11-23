@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+/* font-weight: 400; regular
+font-weight: 500; medium
+font-weight: 600; semi bold
+font-weight: 700; bold
+font-weight: 800; extra bold */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #09090B;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 40px;
+}
+
+.flexHorizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 1200px;
+    margin-bottom: 10px;
+}
+
+.headerText {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #F9FAFB;
+}
+
+/*DEVSTORE LOGO*/
+.logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 24px;
+    margin-right: 12px;
+
+}
+
+/*CART AND ACCOUNT BUTTON IN HEADER RIGHT*/
+.cartButton {
+    width: 77px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.accountButton {
+    width: 88px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cartButton:hover,
+.accountButton:hover {
+    color: #ff0000;
+}
+
+.cartIcon {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/*SEARCH BAR IN HEADER*/
+.formStyle {
+    width: 320px;
+    height: 44px;
+    border-radius: 88px;
+    background-color: #18181B;
+    border: none;
+    position: relative;
+}
+
+.formStyle input {
+    width: 274px;
+    height: 100%;
+    display: block;
+    border-radius: 0px 88px 88px 0px;
+    padding: 20px 12px;
+    background-color: #18181B;
+    border: none;
+    caret-color: white;
+    color: white;
+
+}
+
+.formStyle input:focus {
+    outline: none;
+}
+
+.formStyle input::placeholder,
+.searchIcon {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #71717A;
+}
+
+.formStyle button {
+    width: 46px;
+    padding-left: 20px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #18181B;
+    border-radius: 88px 0px 0px 88px;
+}
+
+.content {
+    width: 1200px;
+    height: 714px;
+    display: flex;
+    align-items: stretch; /* Ensure equal height */
+    gap: 24px;
+  }
+  
+  .productMain {
+    width: 831px;
+    background: url(./images/Frame\ 3.png);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .productLeft {
+    display: flex;
+    flex-direction: column; /* Align columns vertically */
+    gap: 24px;
+  }
+  
+  .productLeftOne {
+    width: 345px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; /* Make sure it stretches to match height */
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+  }
+
+ .top {
+    background: url(./images/Frame1.png);
+  }
+
+ .bottom {
+    background: url(./images/Frame2.png);
+  }
+  
+
+ .contentButton {
+    width: 240px;
+    height: 48px;
+    border: 2px solid #71717A;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+ }
+
+ .contentButton span {
+    position: absolute;
+    top: 50%;
+    right: 0.8%;
+    transform: translateY(-50%);
+    background-color: #8B5CF6;
+    border-radius: 30px;
+    width: 83px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 
