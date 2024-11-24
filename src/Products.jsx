@@ -1,17 +1,25 @@
 import React from "react";
-import data from "./data";
+import sideData from "./sideData";
 import Catalogue from "./Catalogue";
+import Main from "./Main";
+import mainData from "./mainData";
 
 function Products() {
   return (
     <div className="content">
-      <div className="productMain">
-        <button className="contentButton">
-          Eryx Hoody <span>120USD</span>
-        </button>
-      </div>
+      {mainData.map((Data) => {
+        return (
+          <Main
+            key={Data.key}
+            name={Data.shoeName}
+            price={Data.shoePrice}
+            image={Data.background}
+          />
+        );
+      })}
+      ;
       <div className="productLeft">
-        {data.map((oneData) => {
+        {sideData.map((oneData) => {
           return (
             <Catalogue
               key={oneData.key}

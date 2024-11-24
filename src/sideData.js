@@ -1,4 +1,4 @@
-const data = [
+const sideData = [
   {
     key: 1,
     shoeName: "Maia Hoodie",
@@ -14,4 +14,4 @@ const data = [
   },
 ];
 
-export default data;
+export default sideData;

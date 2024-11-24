@@ -136,7 +136,6 @@ header {
   
   .productMain {
     width: 831px;
-    background: url(./images/Frame\ 3.png);
     display: flex;
     align-items: center;
     justify-content: right;
@@ -158,15 +157,6 @@ header {
     align-items: flex-end;
     justify-content: right;
   }
-
- .top {
-    background: url(./images/Frame1.png);
-  }
-
- .bottom {
-    background: url(./images/Frame2.png);
-  }
-  
 
  .contentButton {
     width: 240px;
