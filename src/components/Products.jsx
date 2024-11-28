@@ -1,8 +1,8 @@
 import React from "react";
-import sideData from "./sideData";
+import sideData from "../data_to_render/sideData";
 import Catalogue from "./Catalogue";
 import Main from "./Main";
-import mainData from "./mainData";
+import mainData from "../data_to_render/mainData";
 
 function Products() {
   return (
