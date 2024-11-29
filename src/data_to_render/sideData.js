@@ -4,6 +4,7 @@ const sideData = [
     shoeName: "Maia Hoodie",
     shoePrice: "99USD",
     background: "./images/Frame1.png",
+    divId: 1,
   },
 
   {
@@ -11,6 +12,7 @@ const sideData = [
     shoeName: "M G Hoodie",
     shoePrice: "89USD",
     background: "./images/Frame2.png",
+    divId: 2,
   },
 ];
 

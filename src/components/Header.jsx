@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./Modal/Modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Heading() {
   return (
@@ -7,14 +11,15 @@ function Heading() {
         <p className="logo">devstore</p>
         <form action="" className="formStyle flexHorizontal">
           <button>
-            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+            <FontAwesomeIcon icon={faSearch} />
           </button>
           <input type="search" placeholder="Search products" />
         </form>
       </div>
       <div className="headerRight flexHorizontal">
         <button className="headerText cartButton">
-          <i class="fa-solid fa-bag-shopping cartIcon"></i>Cart
+          <FontAwesomeIcon icon={faBagShopping} />
+          Cart
         </button>
 
         <div>

@@ -26,6 +26,7 @@ function Products() {
               name={oneData.shoeName}
               price={oneData.shoePrice}
               image={oneData.background}
+              btnId={oneData.divId}
             />
           );
         })}
