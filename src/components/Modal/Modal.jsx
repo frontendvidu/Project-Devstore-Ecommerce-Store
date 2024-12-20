@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
 function Modal(props) {
-  const [status, setStatus] = useState("none");
-
   function closeModal() {
     props.onClose(); // Notify the parent to close the modal
   }
@@ -38,7 +36,7 @@ function Modal(props) {
             <button className={styles.btnsize}>L</button>
             <button className={styles.btnsize}>XL</button>
           </div>
-          <button className={styles.checkout}>Checkout</button>
+          <button className={styles.checkout}>Add to cart</button>
         </div>
       </div>
     </div>

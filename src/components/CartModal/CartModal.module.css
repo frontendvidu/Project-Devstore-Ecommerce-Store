@@ -1,0 +1,64 @@
+.outerCartModal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.innerCartModal {
+    background-color: white;
+    width: 699px;
+    height: 70%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 45px;
+}
+
+.titleCartModal {
+    font-weight: 600px;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+.paraCartModal {
+    font-weight: 500px;
+    font-size: 14px;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.itemCartModal {
+    width: 608px;
+    background-color: blue;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.itemNameCartModal {
+    font-weight: 500px;
+    font-size: 18px;
+    color: #1E1E1E;
+    margin-right: 164px;
+}
+
+.itemPriceCartModal {
+    font-weight: 500px;
+    font-size: 14px;
+    color: #1E1E1E;
+    margin-right: 38px;
+}

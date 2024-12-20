@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-import Modal from "./Modal/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
-
+import CartModal from "./CartModal/CartModal";
+import PortalElement from "./Portal/PortalElement";
 function Heading() {
+  const [cartCheck, setCartCheck] = useState(false);
+
+  function handleCartVisibility() {
+    setCartCheck((prev) => !prev);
+  }
+
+  function handleCartClose() {
+    setCartCheck(false);
+  }
+
   return (
     <header className="flexHorizontal">
       <div className="headerLeft flexHorizontal">
@@ -17,7 +27,10 @@ function Heading() {
         </form>
       </div>
       <div className="headerRight flexHorizontal">
-        <button className="headerText cartButton">
+        <button
+          onClick={handleCartVisibility}
+          className="headerText cartButton"
+        >
           <FontAwesomeIcon icon={faBagShopping} />
           Cart
         </button>
@@ -29,6 +42,9 @@ function Heading() {
           </button>
         </div>
       </div>
+      <PortalElement>
+        {cartCheck && <CartModal handleClose={handleCartClose} />}
+      </PortalElement>
     </header>
   );
 }

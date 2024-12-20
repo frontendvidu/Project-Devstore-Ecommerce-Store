@@ -10,6 +10,7 @@ font-weight: 800; extra bold */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
 header {
     width: 1200px;
     margin-bottom: 10px;
+    /* position: relative; */
 }
 
 .headerText {
@@ -172,6 +174,37 @@ header {
     position: relative;
     text-align: left;
     padding-left: 20px;
+    cursor: pointer;
+    transition: all 0.8s ease ease-in-out;
+ }
+
+ .contentButton:hover {
+    transform: scale(1.01);
+ }
+
+ .contentButton::after {
+    content: "ADD TO CART";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease ease-in-out;
+    
+ }
+
+ .contentButton:hover::after {
+    display: flex;
  }
 
  .contentButton span {
